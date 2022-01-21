@@ -1,0 +1,120 @@
+html{
+  height: 100%;
+}
+body{
+  height: 100%;
+}
+.App {
+  text-align: center;
+  background-color: #5786FF;
+}
+.App-header{
+  font-weight: bold;
+  font-size: 32px;
+  padding: 20px;
+  color:rgb(45, 49, 49);
+}
+.form_section{
+  margin-bottom: 30px;
+}
+.form_section form {
+  display: flex;
+  padding:0 10%;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap:15px 30px;
+}
+.form_section form p:first-child{
+  width: 100%;
+  display: flex;
+  gap:20px;
+  justify-content: center;
+}
+.form_section form p:first-child input{
+  width: 50%;
+  border-radius: 40px;
+  padding:10px 10px;
+  outline:none;
+}
+.form_section form p:first-child select{
+  max-width: 180px;
+  min-width: 130px;
+  width: 30%;
+  border-radius: 10px;
+  padding:0px 10px;
+}
+.form_section form p:first-child select:focus{
+  border-radius: 10px 10px 0 0;
+  outline:none;
+}
+.form_section form p:first-child select option{
+  box-shadow: none;
+}
+.form_section form .create{
+  width: 100%;
+  max-width: 180px;
+}
+.form_section form .update,
+.form_section form .cancle{
+  width: 100%;
+  max-width: 150px;
+}
+.form_section form p input{
+  width: 100%;
+  border-radius: 10px;
+  border:1px solid;
+  padding:2px;
+}
+.list_section{
+  display: flex;
+  justify-content: space-evenly;
+  padding:40px 0;
+  border-radius: 40px 40px 0 0 ;
+  background-color: #ffffff;
+}
+.list_section .planlist{
+  text-align: center;
+  border: 1px solid;
+  width: 30%;
+  border-radius: 10px;
+  padding:20px 0;
+  background:#5786FF;
+  height: 50vh;
+  /* overflow-y: scroll; */
+}
+.list_section .planlist p {
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom:15px;
+ 
+  margin: 0 20%;
+  border-bottom: 2px solid #e2e2e2;
+}
+.list_section .planlist ul{
+  margin-top:15px;
+  padding: 0 10%;
+}
+.list_section .planlist ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:5px;
+  border-bottom:2px solid #e2e2e2;
+}
+.list_section .planlist ul li a{
+  width: 18px;
+  height: 18px;
+  text-indent: -9999px;
+  display: inline-block;
+}
+.list_section .planlist .listbtn{
+  display: flex;
+  align-items: center;
+  gap:5px;
+}
+.list_section .planlist .listbtn .upbtn{
+  background: url('/src/update.png') no-repeat 0 0 / 18px 18px;
+}
+.list_section .planlist .listbtn .debtn{
+  background: url('/src/delete.png') no-repeat 0 0 / 18px 18px;
+}
